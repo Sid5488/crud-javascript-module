@@ -1,7 +1,7 @@
 const user = {
-    name,
-    email,
-    password
+  name,
+  email,
+  password
 };
 
 export default user;

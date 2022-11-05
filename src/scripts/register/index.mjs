@@ -6,15 +6,15 @@ const password = document.getElementById('password');
 const btnRegister = document.getElementById('register');
 
 btnRegister.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log(name.value)
-    const rawResponse = register(name.value, email.value, password.value);
+  e.preventDefault();
 
-    if (rawResponse !== 'cadastrado') {
-        alert(rawResponse);
-    } else {
-        alert(rawResponse);
+  const rawResponse = register(name.value, email.value, password.value);
 
-        window.location = '../../../public/login.html';
-    }
+  if (rawResponse !== 'cadastrado') {
+    alert(rawResponse);
+  } else {
+    alert(rawResponse);
+
+    window.location = '../../../public/login.html';
+  }
 });
