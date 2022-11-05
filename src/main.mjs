@@ -1,1 +1,1 @@
-console.log('Env: Development');
+console.log('Env: Main');
