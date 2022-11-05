@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página de registro</title>
-        <link rel="stylesheet" href="./styles/style.css"/>
-    </head>
-    <body>
-        <div class="screen">
-            <div class="login">
-                <h1>Registre sua conta</h1>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de registro</title>
+    <link rel="stylesheet" href="./styles/style.css"/>
+  </head>
 
-                <form method="POST" class="validador">
-                    <label>
-                        Seu nome:<br/>
-                        <input type="text" id="name" name="name" required/>
-                    </label>
-                    <label>
-                        Seu e-mail:<br/>
-                        <input type="email" name="email" id="email" autocomplete="off" required/>
-                    </label>
-                    <label>
-                        Sua senha:<br/>
-                        <input type="password" id="password" name="password" minlength="3" required/>
-                    </label>
-                    <label>
-                        <button id="register">Cadastrar</button>
-                    </label>
-                </form>
+  <body>
+    <div class="screen">
+      <div class="login">
+        <h1>Registre sua conta</h1>
 
-                <div>
-                    Já tem uma conta? <a href="login.html">Logue na sua!</a>
-                </div>
-            </div>
+        <form method="POST" class="validador">
+          <label>
+            Seu nome:<br/>
+            <input type="text" id="name" name="name" required/>
+          </label>
+
+          <label>
+            Seu e-mail:<br/>
+            <input type="email" name="email" id="email" autocomplete="off" required/>
+          </label>
+
+          <label>
+            Sua senha:<br/>
+            <input type="password" id="password" name="password" minlength="3" required/>
+          </label>
+
+          <button id="register">Cadastrar</button>
+        </form>
+
+        <div>
+          Já tem uma conta? <a href="login.html">Logue na sua!</a>
         </div>
+      </div>
+    </div>
 
-        <!-- <script type="module" src="../src/main.mjs"></script> -->
-        <script type="module" src="../src/scripts/register/index.mjs"></script>
-    </body>
+    <!-- <script type="module" src="../src/main.mjs"></script> -->
+    <script type="module" src="../src/scripts/register/index.mjs"></script>
+  </body>
 </html>
